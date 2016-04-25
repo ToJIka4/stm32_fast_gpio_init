@@ -1,0 +1,5 @@
+__STATIC_INLINE void fast_gpio_init(void);
+
+__STATIC_INLINE void fast_gpio_init(){
+	RCC->AHBENR |= FGI_RCC_GPIOAEN | FGI_RCC_GPIOBEN | FGI_RCC_GPIOCEN
+			| FGI_RCC_GPIODEN | FGI_RCC_GPIOEEN | FGI_RCC_GPIOFEN;

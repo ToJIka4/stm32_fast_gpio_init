@@ -1,0 +1,1 @@
+node index.js > fast_gpio_init.h
